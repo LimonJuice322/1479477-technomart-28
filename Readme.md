@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Илья Ермохин](https://up.htmlacademy.ru/htmlcss/28/user/1479477).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Половков](https://htmlacademy.ru/profile/psinegmatic).
 
 ---
 
