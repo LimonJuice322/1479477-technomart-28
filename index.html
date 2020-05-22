@@ -8,7 +8,11 @@
     <header class="main-header">
       <section class="user-actions">
         <a class="header-logo" href="index.html">Техномарт</a>
-        <!-- Форма поиска -->
+        <form class="search-form" action="index.html" method="post">
+          <label class="visually-hidden" for="header-search">Поиск:</label>
+          <input id="header-search" type="search" name="search" value="">
+          <button class="visually-hidden" type="submit">Найти</button>
+        </form>
         <a href="#user-favorits.html">Закладки: 0</a>
         <a href="#user-basket.html">Корзина: 0</a>
         <a class="button-buy" href="#checkout.html">Оформить заказ</a>
@@ -40,7 +44,7 @@
             <a href="#">Компания</a>
           </li>
           <li class="navigation-item">
-            <a href="#">Каталог</a>
+            <a href="catalog.html">Каталог</a>
           </li>
           <li class="navigation-item">
             <a href="#">Новости</a>
@@ -254,11 +258,11 @@
     </main>
 
     <footer class="main-footer">
-      <a class="footer-logo" href="#">Техномарт</a>
+      <a class="footer-logo" href="index.html">Техномарт</a>
       <ul class="company-nav-footer">
         <li><a href="#company.html">Компания</a></li>
         <li><a href="#news.html">Новости</a></li>
-        <li><a href="#catalog.html">Каталог</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
         <li><a href="#delivery.html">Доставка</a></li>
         <li><a href="#contacts.html">Контакты</a></li>
       </ul>
@@ -294,5 +298,31 @@
         </p>
       </section>
     </footer>
+
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Форма для связи</h2>
+      <form class="write-us-form" action="index.html" method="post">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="user-name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user-mail">Ваш e-mail:</label>
+          <input id="user-mail" type="text" name="user-mail" value="" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-message">Текст письма:</label>
+          <textarea id="user-message" name="name" rows="8" cols="80" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button" type="submit">Оформить заказ</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как добраться</h2>
+      <img src="img/full-map.png" width="943" height="442" alt="Увеличенное изображение карты">
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
