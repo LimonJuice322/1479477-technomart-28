@@ -38,9 +38,9 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
-  color: var(--basic-white);
+  color: var(--basic-black);
 
-  background-color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 a {
@@ -73,6 +73,8 @@ img {
 }
 
 .main-header {
+  color: var(--basic-white);
+
   background-color: var(--basic-whitedark);
 }
 
@@ -258,6 +260,10 @@ img {
 
 .goods-nav-footer a:active {
   opacity: 0.5;
+}
+
+.main-footer {
+  color: var(--basic-white);
 }
 
 .feedback {
