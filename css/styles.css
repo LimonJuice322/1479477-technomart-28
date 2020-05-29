@@ -245,24 +245,6 @@ img {
   font-weight: 700;
 }
 
-.promo-perforators {
-  width: 620px;
-  min-height: 266px;
-
-  background-image: url('../img/slider-perforator.jpg');
-  background-repeat: no-repeat;
-  background-position: 0 center;
-}
-
-.promo-drills {
-  width: 620px;
-  min-height: 266px;
-
-  background-image: url('../img/slider-drill.jpg');
-  background-repeat: no-repeat;
-  background-position: 0 center;
-}
-
 .promo-button {
   font-size: 14px;
   line-height: 18px;
