@@ -888,7 +888,7 @@ img {
 }
 
 .catalog-and-sort {
-  margin-bottom: 59px;
+  padding-bottom: 59px;
 }
 
 .sort-box {
@@ -896,7 +896,6 @@ img {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  margin-bottom: 28px;
 
   background-color: var(--catalog-filter);
 }
@@ -961,7 +960,8 @@ img {
   grid-row-gap: 18px;
   padding: 0;
   margin: 0;
-  margin-bottom: 48px;
+  padding-top: 28px;
+  padding-bottom: 48px;
   list-style: none;
 }
 
