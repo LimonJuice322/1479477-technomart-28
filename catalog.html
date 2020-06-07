@@ -19,8 +19,8 @@
               <input id="header-search" type="search" name="search" value="">
               <button class="visually-hidden" type="submit">Найти</button>
             </form>
-            <a href="#user-favorits.html">Закладки: 0</a>
-            <a class="cart-full" href="#user-cart.html">Корзина: 10</a>
+            <a class="user-bookmarks" href="#user-favorits.html">Закладки: 0</a>
+            <a class="user-cart cart-full" href="#user-cart.html">Корзина: 10</a>
             <a class="button-buy" href="#checkout.html">Оформить заказ</a>
           </div>
         </section>
@@ -38,10 +38,10 @@
             </div>
           </section>
 
-          <div class-"user-flex-wrapper">
+          <div class="user-flex-wrapper">
             <ul class="user-login auth">
-                <li><a href="#user-profile.html">Равшан Джамшутович</a></li>
-                <li><a href="#logout.html">Выход</a></li>
+                <li><a class="user-profile" href="#user-profile.html">Равшан Джамшутович</a></li>
+                <li><a class="user-logout" href="#logout.html"><span class="visually-hidden">Выход</span></a></li>
             </ul>
             <ul class="user-options">
                 <li><a href="#user-orders.html">Мои заказы</a></li>
@@ -53,7 +53,7 @@
         <nav class="main-navigation container">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a href="#">Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a href="#">Компания</a>
@@ -110,23 +110,23 @@
                 <legend>Производители:</legend>
                 <ul>
                   <li class="filter-option">
-                    <input id="bosh" checked class="visually-hidden filter-option filter-option-checkbox" type="checkbox" name="bosh" value="">
+                    <input id="bosh" checked class="visually-hidden filter-option-checkbox" type="checkbox" name="bosh" value="">
                     <label for="bosh">Bosh</label>
                   </li>
                   <li class="filter-option">
-                    <input id="interskol" class="visually-hidden filter-option filter-option-checkbox" type="checkbox" name="interskol" value="">
+                    <input id="interskol" class="visually-hidden filter-option-checkbox" type="checkbox" name="interskol" value="">
                     <label for="interskol">Интерскол</label>
                   </li>
                   <li class="filter-option">
-                    <input id="makita" checked class="visually-hidden filter-option filter-option-checkbox" type="checkbox" name="makita" value="">
+                    <input id="makita" checked class="visually-hidden filter-option-checkbox" type="checkbox" name="makita" value="">
                     <label for="makita">Makita</label>
                   </li>
                   <li class="filter-option">
-                    <input id="dewalt" class="visually-hidden filter-option filter-option-checkbox" type="checkbox" name="dewalt" value="">
+                    <input id="dewalt" class="visually-hidden filter-option-checkbox" type="checkbox" name="dewalt" value="">
                     <label for="dewalt">Dewalt</label>
                   </li>
                   <li class="filter-option">
-                    <input id="hitachi" class="visually-hidden filter-option filter-option-checkbox" type="checkbox" name="hitachi" value="">
+                    <input id="hitachi" class="visually-hidden filter-option-checkbox" type="checkbox" name="hitachi" value="">
                     <label for="hitachi">Hitachi</label>
                   </li>
                 </ul>
@@ -135,11 +135,11 @@
                 <legend>Питание:</legend>
                 <ul>
                   <li class="filter-option">
-                    <input id="power" checked class="visually-hidden filter-option filter-option-radio" type="radio" name="power" value="battery">
+                    <input id="power" checked class="visually-hidden filter-option-radio" type="radio" name="power" value="battery">
                     <label for="power">Аккумуляторные</label>
                   </li>
                   <li class="filter-option">
-                    <input id="mains" class="visually-hidden filter-option filter-option-radio" type="radio" name="power" value="mains">
+                    <input id="mains" class="visually-hidden filter-option-radio" type="radio" name="power" value="mains">
                     <label for="mains">Сетевые</label>
                   </li>
                 </ul>
@@ -171,8 +171,8 @@
                   <button class="button-favorite" type="button">В закладки</button>
                 </p>
                 <h3>Перфоратор BOSCH BFG 6000</h3>
-                <span class="old-price">30500 Р.</span>
-                <span class="new-price">25500 Р.</span>
+                  <span class="old-price">30500 Р.</span>
+                  <span class="new-price">25500 Р.</span>
               </li>
               <li class="catalog-item">
                 <p class="catalog-item-photo">
@@ -186,7 +186,7 @@
                 <span class="old-price">30500 Р.</span>
                 <span class="new-price">25500 Р.</span>
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item new">
                 <p class="catalog-item-photo">
                   <img src="img/catalog-item-1.jpg" width="144" height="128" alt="Перфоратор Bosch BFG 6000">
                 </p>
@@ -198,7 +198,7 @@
                 <span class="old-price">30500 Р.</span>
                 <span class="new-price">25500 Р.</span>
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item new">
                 <p class="catalog-item-photo">
                   <img src="img/catalog-item-2.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 3000">
                 </p>
@@ -222,7 +222,7 @@
                 <span class="old-price">30500 Р.</span>
                 <span class="new-price">25500 Р.</span>
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item new">
                 <p class="catalog-item-photo">
                   <img src="img/catalog-item-3.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
                 </p>
@@ -233,7 +233,7 @@
                 <h3>Перфоратор BOSCH BFG 2000</h3>
                 <span class="new-price">12500 Р.</span>
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item new">
                 <p class="catalog-item-photo">
                   <img src="img/catalog-item-2.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 3000">
                 </p>
@@ -257,7 +257,7 @@
                 <span class="old-price">30500 Р.</span>
                 <span class="new-price">25500 Р.</span>
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item new">
                 <p class="catalog-item-photo">
                   <img src="img/catalog-item-3.jpg" width="127" height="112" alt="Перфоратор Bosch BFG 2000">
                 </p>
@@ -391,9 +391,11 @@
 
     <section class="modal modal-add-cart">
       <b>Товар добавлен в корзину!</b>
-      <a class="button" href="#user-orders.html">Оформить заказ</a>
-      <button class="button button-continue" type="button">Продолжить покупки</button>
-      <button class="modal-close" type="button">Закрыть</button>
+      <div class="button-box">
+        <a class="button" href="#user-orders.html">Оформить заказ</a>
+        <button class="button button-continue" type="button">Продолжить покупки</button>
+      </div>
+      <button class="modal-close" type="button"><img width="21" height="21" src="img/icon-close.svg" alt="Закрыть окно"></button>
     </section>
   </body>
 </html>
