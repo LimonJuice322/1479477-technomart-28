@@ -1519,11 +1519,11 @@ img {
   background-image: url('../img/radio-on-hover.svg');
 }
 
-.filter-option-checkbox:disabled {
+.filter-option-checkbox:disabled + label::before {
   opacity: 0.3;
 }
 
-.filter-option-radio:disabled {
+.filter-option-radio:disabled + label::before {
   opacity: 0.3;
 }
 
