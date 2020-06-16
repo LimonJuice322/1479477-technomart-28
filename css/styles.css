@@ -702,11 +702,16 @@ img {
 
 .promo-perforators {
   position: relative;
+  display: none;
 }
 
 .promo-drills {
   position: relative;
   display: none;
+}
+
+.current-slide {
+  display: block;
 }
 
 .promo-button {
@@ -731,6 +736,37 @@ img {
 
 .promo-button:active {
   background-color: rgba(169, 169, 169, 0.3);
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  left: 295px;
+  top: 220px;
+}
+
+.slider-button {
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  box-sizing: border-box;
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--basic-white);
+  border-radius: 50%;
+
+  background-color: var(--basic-white);
+}
+
+.slider-button:hover {
+  outline: 2px solid var(--hover-color-default);
+}
+
+.current-button {
+  background-color: var(--basic-red);
 }
 
 .popular-products {
@@ -872,7 +908,7 @@ img {
 
 .manufactorers-item:last-child .manufactory-photo {
   padding-top: 34px;
-  padding-left: 10 px;
+  padding-left: 10px;
 }
 
 .services {
@@ -943,6 +979,7 @@ img {
 .services-item:hover,
 .services-item:focus {
   cursor: pointer;
+  color: var(--basic-white);
 
   background-color: var(--basic-greydark);
 }
@@ -953,7 +990,7 @@ img {
   background-color: var(--basic-white);
 }
 
-.services-item-current {
+.current-service {
   color: var(--basic-grey);
 
   background-color: var(--basic-white);
@@ -962,6 +999,7 @@ img {
 .services-list-slider {
   padding: 0;
   margin: 0;
+
   list-style: none;
 }
 
@@ -1001,8 +1039,6 @@ img {
 }
 
 .services-list-slider li:last-child {
-  padding-bottom: 28px;
-
   background-image: url('../img/service-credit.png');
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -1893,13 +1929,18 @@ img {
 }
 
 .modal {
-  position: relative;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal-write-us {
   width: 620px;
   border-top: 7px solid var(--basic-red);
+
+  background-color: var(--basic-white);
 }
 
 .modal-write-us-container {
@@ -2000,6 +2041,9 @@ img {
 .modal-add-cart {
   border-top: 7px solid var(--basic-red);
   width: 620px;
+  z-index: 3;
+
+  background-color: var(--basic-white);
 }
 
 .modal-add-cart::before {
@@ -2059,4 +2103,54 @@ img {
 .modal-add-cart .modal-close {
   top: 11px;
   left: 588px;
+}
+
+.modal-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -70%);
+  }
+
+  70% {
+    transform: translate(-50%, -30%);
+  }
+
+  90% {
+    transform: translate(-50%, -60%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-60%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-40%, -50%);
+  }
 }

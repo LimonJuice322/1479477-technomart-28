@@ -108,6 +108,10 @@
               <button class="button-slider-previous" type="button"><img src="img/slider-left.svg" alt="Предыдущий слайд"></button>
               <button class="button-slider-next" type="button"><img src="img/slider-right.svg" alt="Следующий слайд"></button>
               <a class="button button-slider-catalog" href="catalog.html">Открыть каталог</a>
+              <div class="slider-controls">
+                <button class="slider-button slider-perforators current-button" type="button" aria-label="Слайдер с перфораторами"></button>
+                <button class="slider-button slider-drills" type="button" aria-label="Слайдер с дрелями"></button>
+              </div>
             </li>
             <li class="promo-item">
               <h3>Скидки 50%</h3>
@@ -235,9 +239,9 @@
           </p>
           <div class="flex-services-wrapper">
             <ul class="services-list-menu">
-              <li class="services-item-current">Доставка</li>
+              <li class="services-item">Доставка</li>
               <li class="services-item">Гарантия</li>
-              <li class="services-item">Кредит</li>
+              <li class="services-item current-service">Кредит</li>
             </ul>
             <ul class="services-list-slider">
               <li class="services-slide">
@@ -294,8 +298,8 @@
           <p class="contacts-comment">
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
-          <a href="#"><img src="img/map.png" alt="Как доехать"></a>
-          <a class="button" href="#">Заблудились? Напишите нам!</a>
+          <a class="mini-map" href="#"><img src="img/map.png" alt="Как доехать"></a>
+          <a class="button button-contacts" href="#">Заблудились? Напишите нам!</a>
         </section>
       </div>
     </main>
@@ -425,8 +429,10 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как добраться</h2>
-      <img src="img/full-map.png" width="943" height="442" alt="Увеличенное изображение карты">
+      <img src="img/full-map.png" width="943" height="446" alt="Увеличенное изображение карты">
       <button class="modal-close" type="button"><img width="21" height="21" src="img/icon-close.svg" alt="Закрыть окно"></button>
     </section>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
