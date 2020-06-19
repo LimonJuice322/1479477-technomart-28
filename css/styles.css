@@ -2031,6 +2031,7 @@ img {
 
 .modal-map {
   width: 943px;
+  min-height: 90vh;
 }
 
 .modal-map iframe {
@@ -2053,7 +2054,7 @@ img {
 .modal-map .modal-close {
   top: 10px;
   left: 912px;
-  
+
   z-index: 3;
 }
 
