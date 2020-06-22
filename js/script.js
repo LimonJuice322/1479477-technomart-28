@@ -80,7 +80,6 @@ if (document.querySelector('.services-list-slider')) {
   let services_btns = services_menu.querySelectorAll('.services-item');
   services_btns.forEach( (btn) => btn.addEventListener('click', function (evt) {
     if (!evt.target.classList.contains('current-service')) {
-      console.log(evt.target);
       let current_slide = services_slider.querySelector('.current-slide');
       let current_service = services_menu.querySelector('.current-service');
       let sliders = services_slider.querySelectorAll('.services-slide');
