@@ -1074,7 +1074,6 @@ img {
 }
 
 .columns {
-  outline: 2px dotted red;
   display: flex;
   justify-content: space-between;
   color: var(--basic-black);
